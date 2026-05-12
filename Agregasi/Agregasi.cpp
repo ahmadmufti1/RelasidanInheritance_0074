@@ -18,5 +18,10 @@ int main()
     anak* varanak2 = new anak("tiara");
     anak* varanak3 = new anak("dini");
 
+    //pemanggil dan pemberian argument pada prosedur tambahAnak() untuk menambahkan objek anak ke dalam daftar_anak pada objek ibu
+    varibu->tambahAnak(varanak1);
+    varibu->tambahAnak(varanak2);
+    varibu->tambahAnak(varanak3);
+
     
 }
