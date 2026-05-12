@@ -23,5 +23,9 @@ int main()
     varibu->tambahAnak(varanak2);
     varibu->tambahAnak(varanak3);
 
-    
+    //pemanggilan prosedur cetakAnak()
+    varibu->cetakAnak();
+    varibu2->cetakAnak();
+
+    return 0;
 }
