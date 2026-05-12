@@ -70,3 +70,31 @@ void dokter::cetakPasien() {
     }
     cout << endl;
 }
+
+int main()
+{
+    //deklarasi dan pemberian nilai variabel pointer untuk objek dari class dokter dan pasien
+    dokter* varDokter1 = new dokter("Dr. Andi");
+    dokter* varDokter2 = new dokter("Dr. Budi");
+    pasien* varPasien1 = new pasien("Siti");
+    pasien* varPasien2 = new pasien("Joko");
+
+    //pemanggilan dan pemberian argument pada prosedur tambahPasien() dari calss dokter
+    varDokter1->tambahPasien(varPasien1);
+    varDokter1->tambahPasien(varPasien2);
+    varDokter2->tambahPasien(varPasien1);
+
+    //pemanggilan prosedur cetakPasien() dari class dokter
+    varDokter1->cetakPasien();
+    varDokter2->cetakPasien();
+    varPasien1->cetakDokter();
+    varPasien2->cetakDokter();
+
+    //mendelete variabel - variabel pointer dari memori
+    delete varPasien1;
+    delete varPasien2;
+    delete varDokter1;
+    delete varDokter2;
+
+    return 0;
+}
